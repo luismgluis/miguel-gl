@@ -1,0 +1,24 @@
+.buttonImage {
+  width: 100px;
+  height: 100px;
+  border-radius: 4px;
+  background-color: #1b0702;
+  border-color: #a53609;
+  box-sizing: content-box;
+}
+
+.buttonImageGhost {
+  box-sizing: content-box;
+  width: 70%;
+  border-radius: 14px;
+  background-color: transparent;
+  border-color: transparent;
+}
+.buttonImageGhost:hover {
+    background-color: rgba(0, 0, 0, 0.534);
+    border-color: transparent;
+}
+
+.buttonContainer {
+  width: fit-content;
+}

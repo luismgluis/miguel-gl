@@ -1,0 +1,67 @@
+$customImageLateral: 300px;
+
+.customImage {
+  width: $customImageLateral;
+  height: $customImageLateral;
+}
+
+.panelCustomImage {
+  overflow: hidden;
+  width: $customImageLateral;
+  height: $customImageLateral;
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+  margin-bottom: 20px;
+
+  -webkit-box-shadow: 10px 10px 15px -15px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 15px -15px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 15px -15px rgba(0, 0, 0, 0.75);
+}
+
+.card {
+  width: 100%;
+  background: #000000b5;
+  color: white;
+  border-radius: 14px;
+
+  -webkit-box-shadow: 10px 10px 15px -15px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 15px -15px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 15px -15px rgba(0, 0, 0, 0.75);
+}
+
+.panelTotal {
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-top: 30px;
+  z-index: 1;
+  position: relative;
+}
+
+.panelBackground {
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+  z-index: 0;
+}
+
+.changeButton {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.panelTotal::-webkit-scrollbar {
+  width: 12px; /* width of the entire scrollbar */
+}
+
+.panelTotal::-webkit-scrollbar-track {
+  background: rgba(255, 166, 0, 0); /* color of the tracking area */
+}
+
+.panelTotal::-webkit-scrollbar-thumb {
+  background-color: #551605; /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  border: 3px solid#b33f1f; /* creates padding around scroll thumb */
+}
