@@ -4,8 +4,13 @@ import { Button } from "reactstrap";
 const TAG = "CUSTOM BUTTON";
 type CButtonProps = {
   text?: any;
+  onPress?: () => void;
 };
-const CButton: React.FC<CButtonProps> = ({ text }) => {
-  return <Button className="buttonAction">{text}</Button>;
+const CButton: React.FC<CButtonProps> = ({ text, onPress = () => null }) => {
+  return (
+    <Button className="buttonAction" onClick={() => onPress()}>
+      {text}
+    </Button>
+  );
 };
 export default CButton;

@@ -7,6 +7,7 @@ import TwitterIcon from "../../../icons/TwitterIcon";
 import TelegramIcon from "../../../icons/TelegramIcon";
 import LinkedinIcon from "../../../icons/LinkeinIcon";
 import InstagramIcon from "../../../icons/InstagramIcon";
+import utils from "../../../utils/utils";
 const TAG = "CARD BODY SOCIAL";
 type CardBodySocialProps = {
   prop1?: any;
@@ -15,8 +16,7 @@ const CardBodySocial: React.FC<CardBodySocialProps> = ({ prop1 }) => {
   const iconsColor = "#f3f3f3"; //"#d67322";
 
   const action = (url: string = "") => {
-    const w: any = window;
-    w.open(url, "_blank").focus();
+    utils.openUrl(url);
   };
 
   const arrButtonsData = useMemo(

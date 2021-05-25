@@ -2,6 +2,7 @@ import "./../../../components/StartProfile/CardBodyDescription/CardBodyDescripti
 import React from "react";
 import { Button, CardBody, CardSubtitle, CardText, Row } from "reactstrap";
 import CButton from "../../CButton/CButton";
+import utils from "./../../../utils/utils";
 const TAG = "CARD BODY DESCRIPTION";
 type CardBodyDescriptionProps = {
   prop1?: any;
@@ -26,7 +27,14 @@ const CardBodyDescription: React.FC<CardBodyDescriptionProps> = ({ prop1 }) => {
           logic to create amazing things.
         </CardText>
 
-        <CButton text="Get CV" />
+        <CButton
+          onPress={() =>
+            utils.openUrl(
+              "https://firebasestorage.googleapis.com/v0/b/miguel-gl.appspot.com/o/pdf%2FResume-LuisMiguelGrajales-dev.pdf?alt=media&token=f65343c2-bc09-4bae-ab77-8222b126d572"
+            )
+          }
+          text="Get CV"
+        />
 
         <CardSubtitle tag="h6" className="my-2 text-muted">
           Press on the top right button :)
